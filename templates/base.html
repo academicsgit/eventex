@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://wwww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns= "http://222.w3.org/1999/xhtml"
+  xml:lang="pt-br"
+  lang="pt-br">
+<head>
+
+   <title>{% block titulo %}Eventex{% endblock %}</title>
+   {% block meta %} 
+   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Language" content="pt-br" />
+   <meta name="keywords" content="Python, Django, Welcome to the django" />
+   <meta name="description" content="Exercicio pratico do curso WTTD." />
+   {% endblock %}
+   {% block styles %}
+   <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}imagens/favicon.ico"/>
+   <link href="{{ STATIC_URL }}css/template.css" rel="stylesheet" type="text/css" />
+   <link href="{{ STATIC_URL }}css/adicional.css" rel="stylesheet" type="text/css" />
+   {% endblock %}
+   {% block scripts %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.maskedinput-1.2.2.min.js"></script>
+   {% endblock %}
+</head>
+<body class="backgroundSite">
+	<div id="main">
+		<div id="header">
+			<a href="#" class="logo">
+				<img src="{{ STATIC_URL }}imagens/logo.gif" width="140" height="62" alt="Logomarca da Eventex" />
+			</a>
+           {% include "tags/topnav.html" %}
+        </div>
+        <div id="middle">
+            <div id="left-column">
+               <!--  {% include "tags/leftmenu.html" %}  -->
+            </div>
+            <div id="center-column">
+                <div class="top-bar">
+                	<h1>Eventex</h1>
+                    <div class="breadcrumbs direita">
+                    <!-- {% include "tags/idiomas.html" %}  -->
+                    </div>
+                </div>
+		<div class="separadorConteudo"></div>
+		<div class="subtitulo">
+                    	<h2>{{ subtitulo }}</h2>
+                    	<br />
+                  
+         </div>
+
+<!-- CORPO DA PAGINA -->
+{% for msg in messages %}
+<div class="mensagem">{{ msg }}</div>
+{% endfor %}
+
+<div class="table">
+{% block conteudo %} {% endblock %}
+</div>
+<!-- FIM CORPO PAGINA -->
+
+
+
+<!-- RODAPE -->
+
+<div id="footer">
+		<p>
+		HTML5/CSS3. 
+		Developed by <a href="http://www.jacambu.net"><b><i>Manuel Neto</i></b></a> 2011. Turma 3, Welcome to the Django.
+		<a href="http://www.djangoproject.com"><img src="{{ STATIC_URL }}/imagens/djangosite80x15.gif"></a>
+		</p>
+</div>
+
+</div> <!--  fim do center-collum -->
+</div> <!--  fim do middle -->
+</div> <!-- fim do main -->
+
+</body>
+</html>

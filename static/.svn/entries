@@ -1,0 +1,45 @@
+10
+
+dir
+18
+svn://svn.ifpi.edu.br/desenvolvimento/trunk/estudante/estudante/static
+svn://svn.ifpi.edu.br
+
+
+
+2011-04-18T16:53:08.052456Z
+18
+manuel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+954a3362-de54-4d16-8a39-485e302ae0be
+
+
+
+
+
+
+0
+empty
+
+css
+dir
+
+imagens
+dir
+
+js
+dir
+

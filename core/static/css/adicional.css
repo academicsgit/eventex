@@ -1,0 +1,111 @@
+@charset "ISO-8859-1";
+.centralizado{
+	text-align: center;
+}
+.esquerda{
+	text-align: left;
+}
+.direita{
+	text-align: right;
+}
+.semEspaco{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.separadorConteudo {
+	clear:both;
+	border-top:2px solid #f70;
+	margin:0 0 17px 0;
+}
+
+/* Cabeçalho da coluna da direita para Informação. */
+#right-column .hInfo {
+	float:left;
+	background:#00a;/*background:#7E878A;*/
+	border:1px solid #B8B8B8;
+	border-bottom:0;
+	padding:3px 10px;
+	color:#fff;
+	text-transform:uppercase;
+}
+
+/* Caixa da coluna da direita para Informação. */
+#right-column .boxInfo {
+	float:left;
+	width:121px;
+	padding:5px;
+	border:1px solid #B8B8B8;
+	background:#ddf;/*background:#EBEBEB;*/
+	margin:0 0 15px 0;
+}
+
+/* Cabeçalho da coluna da direita para Erro. */
+#right-column .hErro {
+	float:left;
+	background:#a00;/*background:#7E878A;*/
+	border:1px solid #B8B8B8;
+	border-bottom:0;
+	padding:3px 10px;
+	color:#fff;
+	text-transform:uppercase;
+}
+
+/* Caixa da coluna da direita para Erro. */
+#right-column .boxErro {
+	float:left;
+	width:121px;
+	padding:5px;
+	border:1px solid #B8B8B8;
+	background:#fdd;/*background:#EBEBEB;*/
+	margin:0 0 15px 0;
+}
+
+.colunaRotulo{
+	width: 25%;
+}
+
+table.listing th {
+	text-align:center;/*Não tinha*/
+}
+
+table {
+	padding: 0;
+	border-spacing: 0;
+}
+
+.backgroundSite{/*disponível em: gradient.glrzad.com*/
+	/*
+	verde instituto federal:
+	rgb:140, 198, 62;
+	cmyk: 29%, 0%, 69%, 22%;
+	HSV: 86º, 69%, 78%;
+	*/
+	background-color: #8cc63e;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right bottom,
+		color-stop(0.0, rgb(256,256,256)),
+		color-stop(0.20, rgb(256,256,256)),
+		color-stop(1.0, rgb(140, 198, 62))
+	);
+	background-image: -moz-linear-gradient(
+		left center,
+		rgb(256, 256, 256) 0%,
+		rgb(256, 256, 256) 20%,
+		rgb(140, 198, 62) 100%
+	);
+}
+
+.subtitulo h2 {
+	font:10px/11px verdana,sans-serif;
+	color:#43729F;
+	margin:0 0 4px 0;
+}
+/*
+select{
+	background-color: green;
+}
+*/

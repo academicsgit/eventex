@@ -1,0 +1,133 @@
+/*@CHARSET "ISO-8859-1";*/
+/**
+ * Estilos de uso geral na aplicação.
+ */
+
+
+/*Tags*/
+body{
+	font-family: Verdana, Arial, Tahoma, Helvetica, Sans-Serif;
+	font-size: 0.80em;
+}
+table{
+	_font-size: 1.00em;/* Somente para o ie6. Valor igual ao font-size de body.*/
+}
+th{
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+label{
+	cursor: pointer;
+}
+h1{
+	font-size: 1.3em;
+	text-align: center;
+}
+h2{
+	font-size: 1.00em;
+}
+/*Fim de Tags*/
+
+/*Ids*/
+#conteudo{
+	width: 776px;
+	position:relative;
+	left: 50%;
+	margin-left: -388px;
+}
+#conteudoImpressao{
+	/*
+	 O mesmo conteúdo do estilo de conteudo, só que o width e o margin-left são
+	diferentes.
+	*/
+	width: 640px;
+	position:relative;
+	left: 50%;
+	margin-left: -320px;
+}
+#conteudoNaoCentralizado{
+	width: 776px;
+}
+/*Fim de Ids*/
+
+/*Classes*/
+.quadro{
+	border: 1px solid;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+.quadroSemEspaco{
+	border: 1px solid;
+	margin: 0;
+	padding: 0.2em;
+}
+.quadroLogin{
+	width: 17em;
+	border: 1px solid;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	
+	margin: /*0px*/ auto;
+}
+.corpoMemorando{
+	margin-left: 2em;
+}
+.caixaSemEspacos{
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+.paragrafoPaginacao{
+	text-align:center;
+}
+.paragrafoPaginacaoSemEspaco{
+	text-align:center;
+	margin:0;
+	padding:0;
+	border:0;
+}
+.paragrafoMensagem{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	text-align: center;
+}
+.mensagem{
+	text-align:center;
+	color: red;
+}
+.mensagemNaoLida{
+	color: red;
+}
+.linhaDadosTabela:hover{
+	background-color: #dddddd;
+}
+.tabela tbody tr td{
+	vertical-align: top;
+	text-align:center;
+}
+.textoDireita{
+	text-align: right;
+}
+.textoCentralizado{
+	text-align: center;
+}
+.textoJustificado{
+	text-align: justify;
+}
+.h2Indice{
+	text-align: center;
+}
+.caixaDataImpressao{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: 0.8em;
+}
+/*Fim de Classes*/
