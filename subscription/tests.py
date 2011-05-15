@@ -14,10 +14,3 @@ class SimpleTest(TestCase):
         Tests that 1 + 1 always equals 2.
         """
         self.assertEqual(1 + 1, 2)
-        
-class HomePageUrlTest(TestCase):
-    def test_success_when_get_homepage(self):
-        response = self.client.get("/")
-        self.assertEquals(200, response.status_code)
-        self.assertTemplateUsed(response, 'index.html')
-        
