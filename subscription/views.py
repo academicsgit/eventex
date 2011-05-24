@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# Create your views here.
 from django.template import RequestContext
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response, get_object_or_404
@@ -15,7 +14,12 @@ def subscribe(request):
         return new(request)
 
 def new(request):
-    form = SubscriptionForm()
+    form = SubscriptionForm(initial={
+                                'name': 'Entre com seu nome',
+                                'cpf': 'Digite seu CPF sem pontos',
+                                'email': 'Informe seu e-mail',
+                                'phone': 'Entre com o DDD e o telefone ?',
+                                     })
     context = RequestContext(request, {'form': form})
     return render_to_response('subscription/new.html', context)
 
