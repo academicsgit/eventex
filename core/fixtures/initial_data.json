@@ -1,3 +1,1 @@
 [{"pk": 2, "model": "south.migrationhistory", "fields": {"applied": "2011-05-28 23:01:00", "app_name": "subscription", "migration": "0002_auto__add_field_subscription_paid"}}]
-
-
