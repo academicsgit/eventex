@@ -126,7 +126,7 @@ INSTALLED_APPS = (
     'subscription',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'south',
+    #'south',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
